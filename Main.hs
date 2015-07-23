@@ -1,7 +1,12 @@
+{-# LANGUAGE DeriveDataTypeable #-}
 module Main where
 
 import System.Console.ANSI
 import System.Exit
+import System.Environment
+import Control.Exception
+import Data.Typeable
+import Data.List
 
 -- The solutions proper
 
@@ -236,9 +241,35 @@ withColor i c x = do
   setSGR []
   return r
 
+data UndefinedProblemException = UPE Integer
+  deriving (Typeable)
+
+instance Exception UndefinedProblemException
+
+instance Show UndefinedProblemException where
+  show (UPE x) = ("Problem " ++ show x ++ " not defined")
+
+selectTests :: [String] -> [Solution]
+selectTests []   = solutions
+selectTests args =
+  let nums = sort $ fmap read args in
+  rightIntersect nums solutions
+  where
+    cmp x (y, _, _) = compare x y
+
+    rightIntersect :: [Integer] -> [Solution] -> [Solution]
+    rightIntersect [] _          = []
+    rightIntersect _ []          = []
+    rightIntersect (x:xs) (y:ys) = case cmp x y of
+      LT -> throw (UPE x)
+      EQ -> y : rightIntersect xs ys
+      GT -> rightIntersect (x:xs) ys
+
 main :: IO ()
 main = do
-  results <- mapM checkSolution solutions
+  args <- getArgs
+  let tests = selectTests args
+  results <- mapM checkSolution tests
   if (all id results)
     then exitSuccess
     else exitFailure
