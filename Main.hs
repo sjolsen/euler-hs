@@ -122,7 +122,7 @@ solutions =
   , (11, Euler0011.solution, 70600674)
   , (12, Euler0012.solution, 76576500)
   , (13, Euler0013.solution, 5537376230)
---  , (14, Euler0014.solution, 0)
+  , (14, Euler0014.solution, 837799)
 --  , (15, Euler0015.solution, 0)
 --  , (16, Euler0016.solution, 0)
 --  , (17, Euler0017.solution, 0)

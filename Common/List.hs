@@ -1,5 +1,7 @@
 module Common.List where
 
+import Data.List
+
 -- Limits for Ord a => [a]
 
 whileSatisfying :: [a] -> (a -> Bool) -> [a]
@@ -29,3 +31,12 @@ adjacentSubsequences _ []     = []
 adjacentSubsequences n (x:xs) = case takeMaybe n (x:xs) of
   Just l  -> l : adjacentSubsequences n xs
   Nothing -> []
+
+-- Strict maximumBy
+
+maximumBy' :: (a -> a -> Ordering) -> [a] -> a
+maximumBy' cmp (x:xs) = foldl' (maxBy cmp) x xs
+  where maxBy cmp a b = case cmp a b of
+          LT -> b
+          EQ -> a
+          GT -> a

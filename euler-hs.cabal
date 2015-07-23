@@ -20,6 +20,7 @@ executable euler-hs
   -- other-modules:
   -- other-extensions:
   ghc-options:         -O2
+  ghc-prof-options:    -fprof-auto
   build-depends:       base >=4.6 && <4.7,
                        ansi-terminal,
                        array,
