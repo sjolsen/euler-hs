@@ -4,6 +4,7 @@ import Data.List
 import Data.Bifunctor
 import Control.Arrow
 import Common.Primes
+import Common.Math
 
 -- Limits for Ord a => [a]
 
@@ -15,14 +16,6 @@ whileSatisfying (x:xs) p
 
 upTo :: Ord a => [a] -> a -> [a]
 upTo l n = l `whileSatisfying` (<= n)
-
--- Basic integer math
-
-isqrt :: Integral a => a -> a
-isqrt = floor . sqrt . fromIntegral
-
-divides :: Integral a => a -> a -> Bool
-divides a b = (b `mod` a) == 0
 
 -- Combinatorics
 
