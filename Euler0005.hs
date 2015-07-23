@@ -1,3 +1,5 @@
 module Euler0005 where
 
-solution = 0
+import Data.List
+
+solution = foldl' lcm 1 [1..20]
