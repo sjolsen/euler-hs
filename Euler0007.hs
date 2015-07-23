@@ -1,3 +1,7 @@
 module Euler0007 where
 
-solution = 0
+import Common.Primes
+
+nthPrime n = primes !! (n-1)
+
+solution = nthPrime 10001
