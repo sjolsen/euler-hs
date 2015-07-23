@@ -18,6 +18,92 @@ import qualified Euler0010
 import qualified Euler0011
 import qualified Euler0012
 import qualified Euler0013
+import qualified Euler0014
+import qualified Euler0015
+import qualified Euler0016
+import qualified Euler0017
+import qualified Euler0018
+import qualified Euler0019
+import qualified Euler0020
+import qualified Euler0021
+import qualified Euler0022
+import qualified Euler0023
+import qualified Euler0024
+import qualified Euler0025
+import qualified Euler0026
+import qualified Euler0027
+import qualified Euler0028
+import qualified Euler0029
+import qualified Euler0030
+import qualified Euler0031
+import qualified Euler0032
+import qualified Euler0033
+import qualified Euler0034
+import qualified Euler0035
+import qualified Euler0036
+import qualified Euler0037
+import qualified Euler0038
+import qualified Euler0039
+import qualified Euler0040
+import qualified Euler0041
+import qualified Euler0042
+import qualified Euler0043
+import qualified Euler0044
+import qualified Euler0045
+import qualified Euler0046
+import qualified Euler0047
+import qualified Euler0048
+import qualified Euler0049
+import qualified Euler0050
+import qualified Euler0051
+import qualified Euler0052
+import qualified Euler0053
+import qualified Euler0054
+import qualified Euler0055
+import qualified Euler0056
+import qualified Euler0057
+import qualified Euler0058
+import qualified Euler0059
+import qualified Euler0060
+import qualified Euler0061
+import qualified Euler0062
+import qualified Euler0063
+import qualified Euler0064
+import qualified Euler0065
+import qualified Euler0066
+import qualified Euler0067
+import qualified Euler0068
+import qualified Euler0069
+import qualified Euler0070
+import qualified Euler0071
+import qualified Euler0072
+import qualified Euler0073
+import qualified Euler0074
+import qualified Euler0075
+import qualified Euler0076
+import qualified Euler0077
+import qualified Euler0078
+import qualified Euler0079
+import qualified Euler0080
+import qualified Euler0081
+import qualified Euler0082
+import qualified Euler0083
+import qualified Euler0084
+import qualified Euler0085
+import qualified Euler0086
+import qualified Euler0087
+import qualified Euler0088
+import qualified Euler0089
+import qualified Euler0090
+import qualified Euler0091
+import qualified Euler0092
+import qualified Euler0093
+import qualified Euler0094
+import qualified Euler0095
+import qualified Euler0096
+import qualified Euler0097
+import qualified Euler0098
+import qualified Euler0099
 
 type Solution = (Integer, Integer, Integer)
 
@@ -36,6 +122,92 @@ solutions =
   , (11, Euler0011.solution, 70600674)
   , (12, Euler0012.solution, 76576500)
   , (13, Euler0013.solution, 5537376230)
+--  , (14, Euler0014.solution, 0)
+--  , (15, Euler0015.solution, 0)
+--  , (16, Euler0016.solution, 0)
+--  , (17, Euler0017.solution, 0)
+--  , (18, Euler0018.solution, 0)
+--  , (19, Euler0019.solution, 0)
+--  , (20, Euler0020.solution, 0)
+--  , (21, Euler0021.solution, 0)
+--  , (22, Euler0022.solution, 0)
+--  , (23, Euler0023.solution, 0)
+--  , (24, Euler0024.solution, 0)
+--  , (25, Euler0025.solution, 0)
+--  , (26, Euler0026.solution, 0)
+--  , (27, Euler0027.solution, 0)
+--  , (28, Euler0028.solution, 0)
+--  , (29, Euler0029.solution, 0)
+--  , (30, Euler0030.solution, 0)
+--  , (31, Euler0031.solution, 0)
+--  , (32, Euler0032.solution, 0)
+--  , (33, Euler0033.solution, 0)
+--  , (34, Euler0034.solution, 0)
+--  , (35, Euler0035.solution, 0)
+--  , (36, Euler0036.solution, 0)
+--  , (37, Euler0037.solution, 0)
+--  , (38, Euler0038.solution, 0)
+--  , (39, Euler0039.solution, 0)
+--  , (40, Euler0040.solution, 0)
+--  , (41, Euler0041.solution, 0)
+--  , (42, Euler0042.solution, 0)
+--  , (43, Euler0043.solution, 0)
+--  , (44, Euler0044.solution, 0)
+--  , (45, Euler0045.solution, 0)
+--  , (46, Euler0046.solution, 0)
+--  , (47, Euler0047.solution, 0)
+--  , (48, Euler0048.solution, 0)
+--  , (49, Euler0049.solution, 0)
+--  , (50, Euler0050.solution, 0)
+--  , (51, Euler0051.solution, 0)
+--  , (52, Euler0052.solution, 0)
+--  , (53, Euler0053.solution, 0)
+--  , (54, Euler0054.solution, 0)
+--  , (55, Euler0055.solution, 0)
+--  , (56, Euler0056.solution, 0)
+--  , (57, Euler0057.solution, 0)
+--  , (58, Euler0058.solution, 0)
+--  , (59, Euler0059.solution, 0)
+--  , (60, Euler0060.solution, 0)
+--  , (61, Euler0061.solution, 0)
+--  , (62, Euler0062.solution, 0)
+--  , (63, Euler0063.solution, 0)
+--  , (64, Euler0064.solution, 0)
+--  , (65, Euler0065.solution, 0)
+--  , (66, Euler0066.solution, 0)
+--  , (67, Euler0067.solution, 0)
+--  , (68, Euler0068.solution, 0)
+--  , (69, Euler0069.solution, 0)
+--  , (70, Euler0070.solution, 0)
+--  , (71, Euler0071.solution, 0)
+--  , (72, Euler0072.solution, 0)
+--  , (73, Euler0073.solution, 0)
+--  , (74, Euler0074.solution, 0)
+--  , (75, Euler0075.solution, 0)
+--  , (76, Euler0076.solution, 0)
+--  , (77, Euler0077.solution, 0)
+--  , (78, Euler0078.solution, 0)
+--  , (79, Euler0079.solution, 0)
+--  , (80, Euler0080.solution, 0)
+--  , (81, Euler0081.solution, 0)
+--  , (82, Euler0082.solution, 0)
+--  , (83, Euler0083.solution, 0)
+--  , (84, Euler0084.solution, 0)
+--  , (85, Euler0085.solution, 0)
+--  , (86, Euler0086.solution, 0)
+--  , (87, Euler0087.solution, 0)
+--  , (88, Euler0088.solution, 0)
+--  , (89, Euler0089.solution, 0)
+--  , (90, Euler0090.solution, 0)
+--  , (91, Euler0091.solution, 0)
+--  , (92, Euler0092.solution, 0)
+--  , (93, Euler0093.solution, 0)
+--  , (94, Euler0094.solution, 0)
+--  , (95, Euler0095.solution, 0)
+--  , (96, Euler0096.solution, 0)
+--  , (97, Euler0097.solution, 0)
+--  , (98, Euler0098.solution, 0)
+--  , (99, Euler0099.solution, 0)
   ]
 
 -- Test driver
