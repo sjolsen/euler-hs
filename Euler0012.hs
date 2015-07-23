@@ -1,4 +1,4 @@
-module Euler12 where
+module Euler0012 where
 
 import Data.List
 import Data.Bifunctor

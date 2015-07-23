@@ -5,15 +5,15 @@ import System.Exit
 
 -- The solutions proper
 
-import qualified Euler11
-import qualified Euler12
+import qualified Euler0011
+import qualified Euler0012
 
 type Solution = (Integer, Integer, Integer)
 
 solutions :: [Solution]
 solutions =
-  [ (11, Euler11.solution, 70600674)
-  , (12, Euler12.solution, 76576500)
+  [ (11, Euler0011.solution, 70600674)
+  , (12, Euler0012.solution, 76576500)
   ]
 
 -- Test driver
