@@ -1,3 +1,6 @@
 module Euler0010 where
 
-solution = 0
+import Common.Primes
+import Common.List
+
+solution = sum $ primes `below` 2000000
