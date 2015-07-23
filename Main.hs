@@ -7,6 +7,8 @@ import System.Exit
 
 import qualified Euler0001
 import qualified Euler0002
+import qualified Euler0003
+
 import qualified Euler0011
 import qualified Euler0012
 
@@ -16,6 +18,7 @@ solutions :: [Solution]
 solutions =
   [ (1,  Euler0001.solution, 233168)
   , (2,  Euler0002.solution, 4613732)
+  , (3,  Euler0003.solution, 6857)
   , (11, Euler0011.solution, 70600674)
   , (12, Euler0012.solution, 76576500)
   ]
