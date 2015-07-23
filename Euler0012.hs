@@ -5,17 +5,7 @@ import Data.Bifunctor
 import Control.Arrow
 import Common.Primes
 import Common.Math
-
--- Limits for Ord a => [a]
-
-whileSatisfying :: [a] -> (a -> Bool) -> [a]
-whileSatisfying []     p = []
-whileSatisfying (x:xs) p
-  | p x       = x : (xs `whileSatisfying` p)
-  | otherwise = []
-
-upTo :: Ord a => [a] -> a -> [a]
-upTo l n = l `whileSatisfying` (<= n)
+import Common.List
 
 -- Combinatorics
 
