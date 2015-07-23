@@ -17,6 +17,7 @@ import qualified Euler0009
 import qualified Euler0010
 import qualified Euler0011
 import qualified Euler0012
+import qualified Euler0013
 
 type Solution = (Integer, Integer, Integer)
 
@@ -34,6 +35,7 @@ solutions =
   , (10, Euler0010.solution, 142913828922)
   , (11, Euler0011.solution, 70600674)
   , (12, Euler0012.solution, 76576500)
+  , (13, Euler0013.solution, 5537376230)
   ]
 
 -- Test driver
