@@ -1,3 +1,6 @@
 module Euler0020 where
 
-solution = 0
+import Common.Combinatorics
+import Data.Digits
+
+solution = sum . digits 10 . factorial $ 100

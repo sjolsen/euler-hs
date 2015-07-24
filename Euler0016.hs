@@ -1,5 +1,5 @@
 module Euler0016 where
 
-import Data.Char
+import Data.Digits
 
-solution = toInteger . sum . fmap digitToInt . show $ 2^1000
+solution = sum . digits 10 $ 2^1000
