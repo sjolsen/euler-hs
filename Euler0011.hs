@@ -62,4 +62,5 @@ solve n =
   in
     foldl' max 0 (fmap product lines)
 
-solution = toInteger (solve 4)
+solution :: IO Integer
+solution = return . toInteger $ solve 4

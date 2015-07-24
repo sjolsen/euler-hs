@@ -1,3 +1,4 @@
 module Euler0027 where
 
-solution = 0
+solution :: IO Integer
+solution = return 0

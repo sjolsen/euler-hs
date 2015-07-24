@@ -16,4 +16,5 @@ nfactors = mcombinations . factorizeWith primes
 solve :: Integer -> Maybe Integer
 solve n = find ((> n) . nfactors) triangles
 
-solution = maybe undefined id (solve 500)
+solution :: IO Integer
+solution = return . maybe undefined id $ solve 500

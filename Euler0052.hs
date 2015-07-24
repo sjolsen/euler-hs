@@ -1,3 +1,4 @@
 module Euler0052 where
 
-solution = 0
+solution :: IO Integer
+solution = return 0

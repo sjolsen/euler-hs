@@ -3,4 +3,5 @@ module Euler0002 where
 import Common.List
 import Common.Fibonacci
 
-solution = sum $ filter even $ fibs `upTo` 4000000
+solution :: IO Integer
+solution = return . sum . filter even $ fibs `upTo` 4000000

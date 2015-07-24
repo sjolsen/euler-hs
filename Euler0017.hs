@@ -12,4 +12,5 @@ letters :: Integer -> Integer
 letters = toInteger . maybe 0 countLetters . english
   where countLetters = Text.length . Text.filter isAlpha
 
-solution = sum . fmap letters $ [1..1000]
+solution :: IO Integer
+solution = return . sum . fmap letters $ [1..1000]

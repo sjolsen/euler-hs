@@ -27,4 +27,5 @@ inputS = concat ["73167176531330624919225119674426574742355349194934",
 input :: [Integer]
 input = fmap (toInteger . digitToInt) inputS
 
-solution = maximum . fmap product . adjacentSubsequences 13 $ input
+solution :: IO Integer
+solution = return . maximum . fmap product . adjacentSubsequences 13 $ input

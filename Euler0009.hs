@@ -9,4 +9,5 @@ triples = do
     then return (a,b,c)
     else []
 
-solution = let (a,b,c) = triples !! 0 in a*b*c
+solution :: IO Integer
+solution = let (a,b,c) = triples !! 0 in return (a*b*c)

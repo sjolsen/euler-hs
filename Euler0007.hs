@@ -4,4 +4,5 @@ import Common.Primes
 
 nthPrime n = primes !! (n-1)
 
-solution = nthPrime 10001
+solution :: IO Integer
+solution = return $ nthPrime 10001

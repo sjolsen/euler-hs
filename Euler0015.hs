@@ -4,4 +4,5 @@ import Common.Combinatorics
 
 data Direction = DRight | DDown
 
-solution = mpermutations [(DRight, 20), (DDown, 20)]
+solution :: IO Integer
+solution = return $ mpermutations [(DRight, 20), (DDown, 20)]

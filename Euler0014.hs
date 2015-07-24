@@ -18,4 +18,5 @@ collatzLength n = 1 + collatzLength (collatzStep n)
 solve :: Integer -> Integer
 solve n = fst . maximumBy' (comparing snd) . fmap (id &&& collatzLength) $ natPlus `below` n
 
-solution = solve 1000000
+solution :: IO Integer
+solution = return $ solve 1000000

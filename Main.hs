@@ -110,7 +110,7 @@ import qualified Euler0097
 import qualified Euler0098
 import qualified Euler0099
 
-type Solution = (Integer, Integer, Integer)
+type Solution = (Integer, IO Integer, Integer)
 
 solutions :: [Solution]
 solutions =
@@ -223,12 +223,14 @@ padLeft n c s
   | otherwise    = s
 
 checkSolution :: Solution -> IO Bool
-checkSolution (n, actual, expected)
-  | actual == expected = do
+checkSolution (n, s, expected) = do
+  actual <- s
+  if actual == expected
+    then do
       putStr $ padLeft 4 ' ' (show n) ++ ": "
       withColor Dull Green $ putStrLn $ show actual
       return True
-  | otherwise = do
+    else do
       putStr $ padLeft 4 ' ' (show n) ++ ": "
       withColor Vivid Red $ putStr (show actual)
       putStrLn $ " (expected " ++ (show expected) ++ ")"

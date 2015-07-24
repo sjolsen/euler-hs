@@ -24,5 +24,5 @@ input = [[04, 62, 98, 27, 23, 09, 70, 98, 73, 93, 38, 53, 60, 04, 23],
          [95, 64],
          [75]]
 
-solution :: Integer
-solution = maybe 0 id (foldTree input)
+solution :: IO Integer
+solution = return . maybe 0 id $ foldTree input

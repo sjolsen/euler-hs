@@ -12,4 +12,5 @@ d n = sum (divisors n) - n
 amicable :: Integral a => a -> Bool
 amicable n = n /= d n && d (d n) == n
 
-solution = sum . filter amicable $ natPlus `below` 10000
+solution :: IO Integer
+solution = return . sum . filter amicable $ natPlus `below` 10000

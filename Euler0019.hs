@@ -52,5 +52,6 @@ wdayRange = iterate nextWDay Mon
 
 dateAndWeek = zipWith (,) dateRange wdayRange
 
-solution = count (\(Date _ _ d, wd) -> d == 1 && wd == Sun)
+solution :: IO Integer
+solution = return . count (\(Date _ _ d, wd) -> d == 1 && wd == Sun)
          $ dateAndWeek `uponSatisfying` ((== Date 1901 Jan 1) . fst)
