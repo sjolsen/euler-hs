@@ -3,6 +3,7 @@ module Common.Factorize where
 import Common.List
 import Common.Math
 import Common.Combinatorics
+import Common.Primes
 import Data.Bifunctor
 
 factorizeWith :: Integral a => [a] -> a -> Multiset a
@@ -21,3 +22,6 @@ factorizeWith p n = factorizeWith' (p `upTo` isqrt n) n
 
 unfactorize :: Integral a => Multiset a -> a
 unfactorize = product . fmap (uncurry (^))
+
+divisors :: Integral a => a -> [a]
+divisors = fmap unfactorize . mcombine . factorizeWith primes
