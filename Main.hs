@@ -132,7 +132,7 @@ solutions =
   , (16, Euler0016.solution, 1366)
   , (17, Euler0017.solution, 21124)
   , (18, Euler0018.solution, 1074)
---  , (19, Euler0019.solution, 0)
+  , (19, Euler0019.solution, 171)
 --  , (20, Euler0020.solution, 0)
 --  , (21, Euler0021.solution, 0)
 --  , (22, Euler0022.solution, 0)

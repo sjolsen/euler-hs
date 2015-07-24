@@ -13,3 +13,9 @@ isqrt = floor . sqrt . fromIntegral
 
 divides :: Integral a => a -> a -> Bool
 divides a b = (b `mod` a) == 0
+
+-- Logic
+
+implies :: Bool -> Bool -> Bool
+implies True False = False
+implies _    _     = True

@@ -16,6 +16,21 @@ upTo l n = l `whileSatisfying` (<= n)
 below :: Ord a => [a] -> a -> [a]
 below l n = l `whileSatisfying` (< n)
 
+uponSatisfying :: [a] -> (a -> Bool) -> [a]
+uponSatisfying []     p = []
+uponSatisfying (x:xs) p
+  | p x       = (x:xs)
+  | otherwise = uponSatisfying xs p
+
+from :: Eq a => [a] -> a -> [a]
+from l x = l `uponSatisfying` (== x)
+
+upTo' :: Eq a => [a] -> a -> [a]
+upTo' []     y = []
+upTo' (x:xs) y
+  | x == y    = [x]
+  | otherwise = x : xs `upTo'` y
+
 -- Subsequences
 
 takeMaybe :: Int -> [a] -> Maybe [a]
@@ -40,3 +55,13 @@ maximumBy' cmp (x:xs) = foldl' (maxBy cmp) x xs
           LT -> b
           EQ -> a
           GT -> a
+
+-- Counting
+
+count :: Integral i => (a -> Bool) -> [a] -> i
+count p xs = go 0 p xs
+  where
+    go acc p [] = acc
+    go acc p (x:xs)
+      | p x = go (1 + acc) p xs
+      | otherwise = go acc p xs
