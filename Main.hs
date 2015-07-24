@@ -258,8 +258,8 @@ selectTests args =
     cmp x (y, _, _) = compare x y
 
     rightIntersect :: [Integer] -> [Solution] -> [Solution]
-    rightIntersect [] _          = []
-    rightIntersect _ []          = []
+    rightIntersect []     _      = []
+    rightIntersect (x:_)  []     = throw (UPE x)
     rightIntersect (x:xs) (y:ys) = case cmp x y of
       LT -> throw (UPE x)
       EQ -> y : rightIntersect xs ys
