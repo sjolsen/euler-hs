@@ -1,3 +1,7 @@
 module Euler0015 where
 
-solution = 0
+import Common.Combinatorics
+
+data Direction = DRight | DDown
+
+solution = mpermutations [(DRight, 20), (DDown, 20)]
