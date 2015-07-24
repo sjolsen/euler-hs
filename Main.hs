@@ -131,7 +131,7 @@ solutions =
   , (15, Euler0015.solution, 137846528820)
   , (16, Euler0016.solution, 1366)
   , (17, Euler0017.solution, 21124)
---  , (18, Euler0018.solution, 0)
+  , (18, Euler0018.solution, 1074)
 --  , (19, Euler0019.solution, 0)
 --  , (20, Euler0020.solution, 0)
 --  , (21, Euler0021.solution, 0)
