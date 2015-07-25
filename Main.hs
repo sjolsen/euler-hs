@@ -143,7 +143,7 @@ solutions =
   , (27, Euler0027.solution, -59231)
   , (28, Euler0028.solution, 669171001)
   , (29, Euler0029.solution, 9183)
---  , (30, Euler0030.solution, 0)
+  , (30, Euler0030.solution, 443839)
 --  , (31, Euler0031.solution, 0)
 --  , (32, Euler0032.solution, 0)
 --  , (33, Euler0033.solution, 0)
