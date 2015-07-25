@@ -33,82 +33,82 @@ import qualified Euler0020
 import qualified Euler0021
 import qualified Euler0022
 import qualified Euler0023
-import qualified Euler0024
-import qualified Euler0025
-import qualified Euler0026
-import qualified Euler0027
-import qualified Euler0028
-import qualified Euler0029
-import qualified Euler0030
-import qualified Euler0031
-import qualified Euler0032
-import qualified Euler0033
-import qualified Euler0034
-import qualified Euler0035
-import qualified Euler0036
-import qualified Euler0037
-import qualified Euler0038
-import qualified Euler0039
-import qualified Euler0040
-import qualified Euler0041
-import qualified Euler0042
-import qualified Euler0043
-import qualified Euler0044
-import qualified Euler0045
-import qualified Euler0046
-import qualified Euler0047
-import qualified Euler0048
-import qualified Euler0049
-import qualified Euler0050
-import qualified Euler0051
-import qualified Euler0052
-import qualified Euler0053
-import qualified Euler0054
-import qualified Euler0055
-import qualified Euler0056
-import qualified Euler0057
-import qualified Euler0058
-import qualified Euler0059
-import qualified Euler0060
-import qualified Euler0061
-import qualified Euler0062
-import qualified Euler0063
-import qualified Euler0064
-import qualified Euler0065
-import qualified Euler0066
-import qualified Euler0067
-import qualified Euler0068
-import qualified Euler0069
-import qualified Euler0070
-import qualified Euler0071
-import qualified Euler0072
-import qualified Euler0073
-import qualified Euler0074
-import qualified Euler0075
-import qualified Euler0076
-import qualified Euler0077
-import qualified Euler0078
-import qualified Euler0079
-import qualified Euler0080
-import qualified Euler0081
-import qualified Euler0082
-import qualified Euler0083
-import qualified Euler0084
-import qualified Euler0085
-import qualified Euler0086
-import qualified Euler0087
-import qualified Euler0088
-import qualified Euler0089
-import qualified Euler0090
-import qualified Euler0091
-import qualified Euler0092
-import qualified Euler0093
-import qualified Euler0094
-import qualified Euler0095
-import qualified Euler0096
-import qualified Euler0097
-import qualified Euler0098
-import qualified Euler0099
+-- import qualified Euler0024
+-- import qualified Euler0025
+-- import qualified Euler0026
+-- import qualified Euler0027
+-- import qualified Euler0028
+-- import qualified Euler0029
+-- import qualified Euler0030
+-- import qualified Euler0031
+-- import qualified Euler0032
+-- import qualified Euler0033
+-- import qualified Euler0034
+-- import qualified Euler0035
+-- import qualified Euler0036
+-- import qualified Euler0037
+-- import qualified Euler0038
+-- import qualified Euler0039
+-- import qualified Euler0040
+-- import qualified Euler0041
+-- import qualified Euler0042
+-- import qualified Euler0043
+-- import qualified Euler0044
+-- import qualified Euler0045
+-- import qualified Euler0046
+-- import qualified Euler0047
+-- import qualified Euler0048
+-- import qualified Euler0049
+-- import qualified Euler0050
+-- import qualified Euler0051
+-- import qualified Euler0052
+-- import qualified Euler0053
+-- import qualified Euler0054
+-- import qualified Euler0055
+-- import qualified Euler0056
+-- import qualified Euler0057
+-- import qualified Euler0058
+-- import qualified Euler0059
+-- import qualified Euler0060
+-- import qualified Euler0061
+-- import qualified Euler0062
+-- import qualified Euler0063
+-- import qualified Euler0064
+-- import qualified Euler0065
+-- import qualified Euler0066
+-- import qualified Euler0067
+-- import qualified Euler0068
+-- import qualified Euler0069
+-- import qualified Euler0070
+-- import qualified Euler0071
+-- import qualified Euler0072
+-- import qualified Euler0073
+-- import qualified Euler0074
+-- import qualified Euler0075
+-- import qualified Euler0076
+-- import qualified Euler0077
+-- import qualified Euler0078
+-- import qualified Euler0079
+-- import qualified Euler0080
+-- import qualified Euler0081
+-- import qualified Euler0082
+-- import qualified Euler0083
+-- import qualified Euler0084
+-- import qualified Euler0085
+-- import qualified Euler0086
+-- import qualified Euler0087
+-- import qualified Euler0088
+-- import qualified Euler0089
+-- import qualified Euler0090
+-- import qualified Euler0091
+-- import qualified Euler0092
+-- import qualified Euler0093
+-- import qualified Euler0094
+-- import qualified Euler0095
+-- import qualified Euler0096
+-- import qualified Euler0097
+-- import qualified Euler0098
+-- import qualified Euler0099
 
 type Solution = (Integer, IO Integer, Integer)
 
@@ -136,7 +136,7 @@ solutions =
   , (20, Euler0020.solution, 648)
   , (21, Euler0021.solution, 31626)
   , (22, Euler0022.solution, 871198282)
---  , (23, Euler0023.solution, 0)
+  , (23, Euler0023.solution, 4179871)
 --  , (24, Euler0024.solution, 0)
 --  , (25, Euler0025.solution, 0)
 --  , (26, Euler0026.solution, 0)

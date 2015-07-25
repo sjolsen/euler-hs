@@ -13,8 +13,14 @@ whileSatisfying (x:xs) p
 upTo :: Ord a => [a] -> a -> [a]
 upTo l n = l `whileSatisfying` (<= n)
 
+downTo :: Ord a => [a] -> a -> [a]
+downTo l n = l `whileSatisfying` (>= n)
+
 below :: Ord a => [a] -> a -> [a]
 below l n = l `whileSatisfying` (< n)
+
+above :: Ord a => [a] -> a -> [a]
+above l n = l `whileSatisfying` (> n)
 
 uponSatisfying :: [a] -> (a -> Bool) -> [a]
 uponSatisfying []     p = []
@@ -65,3 +71,22 @@ count p xs = go 0 p xs
     go acc p (x:xs)
       | p x = go (1 + acc) p xs
       | otherwise = go acc p xs
+
+-- Uniqueness
+
+-- Assumes partitioned input
+uniq :: Eq a => [a] -> [a]
+uniq []  = []
+uniq [x] = [x]
+uniq (x:y:z)
+  | x == y    =     uniq (y:z)
+  | otherwise = x : uniq (y:z)
+
+-- Assumes strictly sorted input
+setMinus :: Ord a => [a] -> [a] -> [a]
+setMinus []     _  = []
+setMinus x      [] = x
+setMinus (x:xs) (y:ys) = case compare x y of
+  LT -> x : (xs `setMinus` (y:ys))
+  EQ -> xs `setMinus` ys
+  GT -> (x:xs) `setMinus` ys
