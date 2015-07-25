@@ -12,7 +12,7 @@ import Data.Ord
 isPrime :: Integral a => a -> Bool
 isPrime n
   | n <= 0    = False
-  | otherwise = case factorizeWith primes n of
+  | otherwise = case factorize n of
                  [(_,1)] -> True
                  _       -> False
 

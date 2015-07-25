@@ -11,7 +11,7 @@ triangles :: Integral a => [a]
 triangles = fmap fst $ iterate (uncurry (+) &&& (+1) . snd) (0, 1)
 
 nfactors :: Integral a => a -> Integer
-nfactors = mcombinations . factorizeWith primes
+nfactors = mcombinations . factorize
 
 solve :: Integer -> Maybe Integer
 solve n = find ((> n) . nfactors) triangles

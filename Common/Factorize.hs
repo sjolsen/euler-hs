@@ -21,11 +21,14 @@ factorizeWith p n = factorizeWith' (p `upTo` isqrt n) n
       (q, 0) -> bimap id (+1) $ q `withoutFactor` p
       _      -> (n, 0)
 
+factorize :: Integral a => a -> Multiset a
+factorize = factorizeWith primes
+
 unfactorize :: Integral a => Multiset a -> a
 unfactorize = product . fmap (uncurry (^))
 
 divisors :: Integral a => a -> [a]
-divisors = fmap unfactorize . mcombine . factorizeWith primes
+divisors = fmap unfactorize . mcombine . factorize
 
 pdivisors :: Integral a => a -> [a]
 pdivisors 0 = []
