@@ -37,7 +37,7 @@ import qualified Euler0024
 import qualified Euler0025
 import qualified Euler0026
 import qualified Euler0027
--- import qualified Euler0028
+import qualified Euler0028
 -- import qualified Euler0029
 -- import qualified Euler0030
 -- import qualified Euler0031
@@ -141,7 +141,7 @@ solutions =
   , (25, Euler0025.solution, 4782)
   , (26, Euler0026.solution, 983)
   , (27, Euler0027.solution, -59231)
---  , (28, Euler0028.solution, 0)
+  , (28, Euler0028.solution, 669171001)
 --  , (29, Euler0029.solution, 0)
 --  , (30, Euler0030.solution, 0)
 --  , (31, Euler0031.solution, 0)
