@@ -28,6 +28,7 @@ executable euler-hs
                        pqueue,
                        numerals,
                        text,
-                       digits
+                       digits,
+                       parsec
   -- hs-source-dirs:
   default-language:    Haskell2010

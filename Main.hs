@@ -135,7 +135,7 @@ solutions =
   , (19, Euler0019.solution, 171)
   , (20, Euler0020.solution, 648)
   , (21, Euler0021.solution, 31626)
---  , (22, Euler0022.solution, 0)
+  , (22, Euler0022.solution, 871198282)
 --  , (23, Euler0023.solution, 0)
 --  , (24, Euler0024.solution, 0)
 --  , (25, Euler0025.solution, 0)
@@ -225,13 +225,12 @@ padLeft n c s
 checkSolution :: Solution -> IO Bool
 checkSolution (n, s, expected) = do
   actual <- s
+  putStr $ padLeft 4 ' ' (show n) ++ ": "
   if actual == expected
     then do
-      putStr $ padLeft 4 ' ' (show n) ++ ": "
-      withColor Dull Green $ putStrLn $ show actual
+      withColor Dull Green $ putStrLn (show actual)
       return True
     else do
-      putStr $ padLeft 4 ' ' (show n) ++ ": "
       withColor Vivid Red $ putStr (show actual)
       putStrLn $ " (expected " ++ (show expected) ++ ")"
       return False
