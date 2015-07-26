@@ -82,6 +82,9 @@ uniq (x:y:z)
   | x == y    =     uniq (y:z)
   | otherwise = x : uniq (y:z)
 
+unique :: Ord a => [a] -> [a]
+unique = uniq . sort
+
 -- Assumes strictly sorted input
 setMinus :: Ord a => [a] -> [a] -> [a]
 setMinus []     _  = []
