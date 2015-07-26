@@ -93,3 +93,9 @@ setMinus (x:xs) (y:ys) = case compare x y of
   LT -> x : (xs `setMinus` (y:ys))
   EQ -> xs `setMinus` ys
   GT -> (x:xs) `setMinus` ys
+
+
+assoc :: Eq a => a -> [(a,b)] -> b
+assoc x l = case find ((== x) . fst) l of
+  Nothing     -> undefined
+  Just (_, b) -> b
